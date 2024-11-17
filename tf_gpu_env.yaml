@@ -1,0 +1,24 @@
+name: tf_gpu_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8  # TensorFlow with GPU support works reliably with Python 3.8
+  - tensorflow-gpu=2.5  # TensorFlow 2.5 supports CUDA 11.2
+  - cudatoolkit=11.2
+  - cudnn=8.1.0
+  - pandas
+  - numpy
+  - scikit-learn
+  - tensorboard
+  - matplotlib
+  - streamlit
+  - ipykernel
+  - keras
+  - scikeras
+  - nltk
+  - seaborn
+  - plotly
+  - pip
+  - pip:
+      - np_utils
